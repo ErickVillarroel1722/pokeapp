@@ -1,0 +1,65 @@
+/* Estilo general */
+ion-content {
+    --background: #cdeeea;
+  }
+  /* Estilo de la imagen del encabezado */
+.header-image {
+    width: 100px; /* Tamaño de la imagen */
+    height: 32px;
+    border-radius: 50%; /* Redondeo para dar un aspecto circular */
+  }
+  
+  /* Tarjeta de búsqueda */
+  .search-card {
+    margin: 16px;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  
+  /* Tarjeta de detalles */
+  .pokemon-details-card {
+    margin: 16px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .pokemon-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff0000;
+  }
+  
+  .pokemon-image {
+    width: 150px;
+    height: 150px;
+    margin: 16px auto;
+  }
+  
+  /* Lista de Pokémon */
+  .pokemon-list {
+    margin: 16px;
+  }
+  
+  .pokemon-card {
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .pokemon-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .pokemon-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Spinner */
+  .loading-spinner {
+    margin: 20px auto;
+    display: block;
+  }
+  

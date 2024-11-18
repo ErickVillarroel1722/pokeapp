@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <div class="title-container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png"
+        alt="Pokéball"
+        class="header-image"
+      />
+      <ion-title></ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Campo de búsqueda -->
+  <ion-card class="search-card">
+    <ion-item>
+      <ion-input
+        placeholder="Busca un Pokémon por nombre o ID"
+        [(ngModel)]="searchTerm"
+      ></ion-input>
+      <ion-button color="danger" expand="block" (click)="searchPokemon()">
+        Buscar
+      </ion-button>
+    </ion-item>
+  </ion-card>
+
+  <!-- Mostrar detalles del Pokémon si se encuentra -->
+  <ion-card *ngIf="selectedPokemon" class="pokemon-details-card">
+    <ion-card-header>
+      <ion-card-title class="pokemon-name">
+        {{ selectedPokemon.name | titlecase }}
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="pokemon-details">
+        <img
+          [src]="selectedPokemon.sprites.front_default"
+          alt="{{ selectedPokemon.name }}"
+          class="pokemon-image"
+        />
+        <p><strong>Altura:</strong> {{ selectedPokemon.height / 10 }} m</p>
+        <p><strong>Peso:</strong> {{ selectedPokemon.weight / 10 }} kg</p>
+        <p><strong>Tipos:</strong></p>
+        <ion-chip *ngFor="let type of selectedPokemon.types" color="secondary">
+          {{ type.type.name }}
+        </ion-chip>
+        <p><strong>Estadísticas base:</strong></p>
+        <ion-list>
+          <ion-item *ngFor="let stat of selectedPokemon.stats">
+            {{ stat.stat.name | titlecase }}: {{ stat.base_stat }}
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Listado de Pokémon -->
+  <ion-grid class="pokemon-list" *ngIf="!loading && pokemons.length > 0">
+    <ion-row>
+      <ion-col
+        size="6"
+        size-md="4"
+        size-lg="3"
+        *ngFor="let pokemon of pokemons"
+      >
+        <ion-card (click)="fetchPokemonDetails(pokemon.name)" class="pokemon-card">
+          <ion-card-content>
+            <ion-label class="pokemon-label">{{ pokemon.name | titlecase }}</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Spinner mientras se carga -->
+  <ion-spinner *ngIf="loading" class="loading-spinner"></ion-spinner>
+</ion-content>
