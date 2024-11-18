@@ -17,9 +17,9 @@ Una aplicación de Pokédex desarrollada con **Ionic Framework** y **Angular** q
 ## Capturas de Pantalla 📸
 
 ### Pantalla Principal
-![Pantalla Principal](![{65BA6778-271D-4AF0-9C19-AC3D87FD93EE}](https://github.com/user-attachments/assets/4fe98a1e-e15f-4298-81d2-b38cccbf0ebe)
-)
+
+![{62EED74E-0F2C-4CD4-8D2E-AF2EDF854CF2}](https://github.com/user-attachments/assets/0fa6a87a-2a82-4926-8298-dc7c133515fb)
 
 ### Detalles de un Pokémon
-![Detalles Pokémon](![{1B312B99-FFD4-47DA-A320-ECA4C5024D22}](https://github.com/user-attachments/assets/272de1d7-3ba6-4db3-9ce5-9a9de35b94ae)
-)
+
+![{6D76A499-9E62-4D70-A5AB-55B956287A45}](https://github.com/user-attachments/assets/0c7560dc-0b72-4dd0-8310-6c37601f6672)
