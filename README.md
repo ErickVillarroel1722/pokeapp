@@ -15,6 +15,10 @@ Una aplicación de Pokédex desarrollada con **Ionic Framework** y **Angular** q
 - 📱 **Compatible con dispositivos móviles y navegadores** (PWA).
 
 ## Capturas de Pantalla 📸
+![{92A1975C-F13B-486B-999A-26695C1A5CBC}](https://github.com/user-attachments/assets/a4654d45-bd0c-48c6-a8b7-545b5a6a73d3)
+
+## Funcionalidad desde mi Smartphone
+![{4C6EF8BD-3129-4617-B02F-7093DE6CFAEF}](https://github.com/user-attachments/assets/2fc7a85c-38d9-4faa-b3bd-4e82628ca5ba)
 
 ### Pantalla Principal
 
