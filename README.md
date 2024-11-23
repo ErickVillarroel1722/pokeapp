@@ -27,3 +27,5 @@ Una aplicación de Pokédex desarrollada con **Ionic Framework** y **Angular** q
 ### Detalles de un Pokémon
 
 ![{6D76A499-9E62-4D70-A5AB-55B956287A45}](https://github.com/user-attachments/assets/0c7560dc-0b72-4dd0-8310-6c37601f6672)
+![image](https://github.com/user-attachments/assets/67e6a827-408f-4d5a-8047-0393cf33f052)
+
